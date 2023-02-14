@@ -1,0 +1,34 @@
+@import 'functions';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'variables';
+
+.card__hero-alter-ego {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card__hero-real-name {
+  font-size: 0.9rem;
+}
+
+.dashboard__action-button {
+  border: none;
+  background: transparent;
+  align-items: center;
+  display: flex;
+
+  .fa-heart {
+    color: $red;
+    font-size: 1.3rem;
+
+    &:hover {
+      animation: fa-beat 0.5s infinite linear;
+    }
+  }
+
+  .fa-trash {
+    color: darken($red, 10);
+  }
+}
